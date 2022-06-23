@@ -1,0 +1,435 @@
+/* INICIO = PARA TODOS LOS ARCHIVOS */
+@import 'https://fonts.googleapis.com/css?family=Lato:400,700';
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    background-color: aliceblue;
+    display: grid;
+    grid-template-columns: 60px auto;
+    grid-template-areas: "header header"
+                        "aside main"
+                        "footer footer";
+}
+.header {
+    grid-area: header;
+    background-color: white;
+}
+.aside {
+    grid-area: aside;
+    background-color: whitesmoke;
+}
+.main {
+    grid-area: main;
+    background-color: aliceblue;
+}
+.footer {
+    grid-area: footer;
+    background-color: bisque;
+}
+.header {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-family: 'Lato', sans-serif;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+    height: 10%;   
+}
+.logo img {
+        width: 120px;
+        padding-top: 60px;
+}
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    margin: 30px;
+}
+.logo {
+    width: 170px;
+    margin-left:40px;
+}
+nav {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+.responsivenav {
+    display: none;
+}
+.aside {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+}
+.aside img:hover {
+    transform: scale(1.1);
+    transition: 1s;
+}
+    .aside img {
+    display: flex;
+    width: 50px;
+    margin-left: 4px;
+    }
+    .aside .face {
+    margin-bottom: 40px;
+    }
+    .titulo {
+    background-image: url(../img/tortaportada.jpg);
+    background-attachment: fixed;
+    height: 320px;
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    .titulo h1 {
+    padding-top: 100px;
+    font-size: 50px;
+    font-weight:bold;
+    font-family: 'Times New Roman', Times, serif;
+    }
+    .footer {
+    width: 100%;
+    padding: 30px;
+    color:black;
+    text-align: center;
+    background-color: white;
+    font-weight: bold;
+    font-family: 'Lato', sans-serif;
+    border-color: blanchedalmond;
+    border-style: solid;
+    }
+/* ARRIBA = PARA TODOS LOS ARCHIVOS */
+/* CSS INDEX */
+    .products {
+    display: flex;
+    justify-content: center;
+    font-family: 'Lato', sans-serif;
+    color: black;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 25px;
+    }
+    .texto p {
+    text-align: center;
+    margin-bottom: 40px;
+    font-weight: bold;
+    margin-left: 20px;
+    margin-right: 20px;
+    }
+   
+    .img1:hover {
+        transform: scale(1.1);
+        transition: 1s;
+        overflow: hidden;
+    }
+  
+    .imagenes {
+        display: flex;
+        justify-content: center;
+    }
+    .imagenes img {
+        width: 20%;
+        height: 300px;
+        display: flex;
+        padding: 20px 10px 10px 20px;
+        border-radius: 50%;
+    }
+    .video {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    }
+/* FIN CSS INDEX */
+/* CSS HOW TO ORDER */
+
+    .menu ol { 
+    font-size: 20px;
+    display: flex;
+    margin: 40px 20px 10px 20px;
+    border: solid blanchedalmond;
+    padding: 10px;
+    font-family: 'Lato', sans-serif;   
+    }
+    .steps{
+    font-size: 23px;
+    display: flex;
+    margin: 10px 15px 15px 5px;
+    font-weight: bold;
+    }
+    .lista{ 
+    font-size: 20px;
+    border: solid blanchedalmond;
+    margin: 20px 25px 25px 20px;
+    font-family: 'Lato', sans-serif;
+    }
+    .delivery{
+    border: solid blanchedalmond;
+    padding: 10px 10px 10px 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 40px;
+    font-family: 'Lato', sans-serif;
+    }
+    .deliveryoptions {
+    font-size: 20px;
+    margin: 10px 0px 10px 0px;
+    }
+
+    .label {
+    font-size: 20px;
+    font-family: 'Lato', sans-serif;
+    }
+    .menuresponsive {
+    display: none;
+    }
+/* FIN CSS HOW TO ORDER */
+/* CSS GALLERY */
+    .fotosgallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;   
+    align-items: center;
+    }
+
+    .fotosgallery img {
+    width: 350px;
+    height: 400px;
+    margin: 20px 20px 20px 20px;
+    border-radius: 10%;
+    border: lemonchiffon 2px solid; 
+    }
+/* FIN CSS GALLERY */
+/* CSS CONTACT US*/
+    .form{
+    display: flex;
+    position:relative;
+    margin-left: 20px;
+    margin-top: 50px;
+    width: 600px; 
+    }
+
+    .fieldset {
+    margin: 15px;
+    padding: 15;
+    border-radius: 5%;
+    }
+    .dato {
+    padding: 8px;
+    margin: 10px;
+    font-family: 'Lato', sans-serif;
+    }
+    .detalles {
+    margin: 10px;
+    font-size: 15px;
+    font-family: 'Lato', sans-serif;
+    width: 90%;
+    padding-top: 15px;
+    padding-left: 15px;
+    }
+    .acepto{
+    font-family: 'Lato', sans-serif;
+    margin-left: 20px;
+    }
+    .btn{
+    margin: 10px 15px 15px 15px;
+    font-family: 'Lato', sans-serif;
+    }
+/* FIN CSS CONTACT US*/
+/* CSS ABOUT US*/
+    .contenido {
+    display: flex;
+    margin: 40px;
+    align-items: center;
+    }
+    .parrafo {
+    width: 500px;
+    padding-left: 40px;
+    font-size: 20px;
+    font-family: 'Lato', sans-serif;
+    }
+/* FIN CSS ABOUT US*/
+
+/*MEDIA QUERY = PARA TODOS LOS ARCHIVOS-440PX*/
+    @media(max-width:440px){
+    .container {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-areas: "header header"
+                             "aside main"
+                            "footer footer";
+    }
+    .header {
+        display: flex;
+        flex-direction: column;
+        font-size: 12px;
+        width: 100%;
+        height: 15%;
+    }
+    .logo img {
+        width: 70px;
+        padding-top: 0px;  
+    }
+    .responsivenav  {
+        display: inline-block;      
+    }
+    .navbar {
+        display: none;
+    }
+    .responsivenav .nav1 {
+        margin-left: 9px;
+    }
+    
+    .titulo {
+        height: 180px;
+        width: 410px;
+        display: flex;
+        margin-top: 40px;
+    }
+    .titulo h1 {
+        padding-top: 60px;
+        font-size: 28px;
+    }
+    .main {
+        width: 410px;
+    }
+    .aside {
+        width:30px;
+    }
+    .aside img {
+        display: flex;
+        width: 25px;
+        margin-left: 4px;
+    }
+    .aside .face {
+        margin-bottom: 10px;
+    }
+/*FIN MEDIA QUERY = PARA TODOS LOS ARCHIVOS-440PX*/
+/* MEDIA QUERY PARA 440PX INDEX*/
+  .products h2{
+      font-size: 25px;
+    }
+  
+  .texto p {
+     margin-bottom: 15px;
+    }
+    .imagenes {
+        display: flex;
+        flex-wrap: wrap;   
+    }
+    .imagenes img {
+        width: 190px;
+        height: 190px;
+        display: flex;
+        border-radius: 50%;
+    }
+    .video {
+        width: 80%;
+        margin-left: 35px;
+    }
+/*FIN MEDIA QUERY PARA 440PX INDEX*/
+/* MEDIA QUERY PARA 440PX HOW TO ORDER*/
+  .menuresponsive {
+      display: flex;
+      flex-wrap: wrap;
+  }
+  .menuresponsive ol { 
+    font-size: 15px;
+    display: flex;
+    padding: 10px;
+    margin: 10px 20px 20px 20px;
+    border: solid blanchedalmond;
+    width: 410px;
+    border-radius: 10px;
+    flex-direction: column;
+    padding-left:30px;
+    }
+    .steps {
+    font-size: 18px;
+    display: flex;
+    text-align: start;
+    }
+    .menu {
+    display: none;
+    }
+    .deliveryoptions {
+        font-size: 18px;
+    }
+    
+    .label {
+        font-size: 15px;
+    }
+/* FIN MEDIA QUERY PARA 440PX HOW TO ORDER*/
+/* MEDIA QUERY PARA 440PX GALLERY*/
+   .fotosgallery img {
+    width: 250px;
+    height: 250px;
+    }
+/* FIN MEDIA QUERY PARA 440PX GALLERY*/
+/* MEDIA QUERY PARA 440PX CONTACT US*/
+    .form{
+        margin-left: 5px;
+        margin-top: 30px;
+        width: 400px;
+    }
+    .fieldset {
+        margin: 15px;
+        padding: 15;
+        border-radius: 5%;
+    }
+    .detalles {
+        margin: 10px;
+        font-size: 15px;
+        width: 90%;
+        padding-top: 15px;
+        padding-left: 15px;
+    }
+    .acepto{
+        display: flex;
+        font-size: 15x;
+        margin-left: 20px;
+        justify-content: center;
+
+    }
+    .btn{
+        margin-left: 20px;
+        padding: 20px;
+        display: flex;
+        justify-content: space-around;
+
+    }
+/* FIN MEDIA QUERY PARA 440PX CONTACT US*/
+/* MEDIA QUERY PARA 440PX ABOUT US*/
+    .contenido {
+        display: flex;
+        margin: 20px;
+        flex-direction: column;
+    }
+    .contenido img {
+        width: 345px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .parrafo {
+        text-align: justify;
+        width: 380px;
+        font-size: 15px;
+        margin-right: 35px;
+
+    }
+}
+/* FIN MEDIA QUERY PARA 440PX ABOUT US*/
+ 

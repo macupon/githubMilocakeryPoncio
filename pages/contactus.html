@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../Assets/img/logo.png" type="image/x-icon">
+    <title>Milo</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            
+            <div class="logo">
+                 <img  src="../Assets/img/logo.png" class="logo" alt="logo">
+            </div>
+            <nav>
+                <div class="navbar">    
+                <ul> 
+                    <li><a href="../index.html">Index</a></li>
+                    <li><a href="./contactus.html">Contact Us</a></li>
+                    <li><a href="./aboutus.html">About Us</a></li>
+                    <li><a href="./gallery.html">Gallery</a></li>
+                    <li><a href="./howtoorder.html">How To Order</a></li>
+                    <li><a href="#pie">Pie de pagina</a></li>
+                </ul>
+                </div>
+                <div class="responsivenav">
+                    <ul class="nav1"> 
+                        <li><a href="../index.html">Index</a></li>
+                        <li><a href="./contactus.html">Contact Us</a></li>
+                        <li><a href="./aboutus.html">About Us</a></li>
+                    </ul>
+                    <ul class="nav2">
+                        <li><a href="./gallery.html">Gallery</a></li>
+                        <li><a href="./howtoorder.html">How To Order</a></li>
+                        <li><a href="#pie">Pie</a></li>
+                    </ul>  
+                </div>     
+            </nav>
+        </header>
+        <main class="main">
+            <div class="titulo">
+                <h1>Contact Us</h1>
+            </div>
+            <div class="form"> 
+                <form action="contactos.php" method="get" enctype="multipart/form-data">
+                    <fieldset class="fieldset">
+                            <input class="dato" type="text" name="Nombre" id="Nombre" placeholder="Ingrese su nombre" required>
+                            <input class="dato" type="text" name="Number" id="Number" placeholder="Ingrese su numero">
+                            <input class="dato" type="email" name="Email" id="Email" placeholder="Ingrese su Email">
+                            <textarea class="detalles" name="Detalles de la torta" id="Detalles" cols="30" rows="10">Detalles de la torta</textarea>
+                        <div class="acepto">
+                            <label for="Acepto">Acepto terminos y condiciones</label> 
+                            <input type="checkbox" name="Acepto" value="Send" required>
+                        </div>
+                        
+                        <div class="btn">
+                            <input type="Submit" value="Send">
+                            <input type="reset" value="Reset">
+                        </div>
+                
+                
+                    </fieldset>
+            </form>
+        </div>
+
+        </main>
+
+        <aside class="aside">
+                <a class="face" href="https://www.facebook.com/milocakery/" target="_blank"><img src="/Assets/img/Fbicon Chico.jpeg" alt="Fb"/></a>
+                <a href="https://www.instagram.com/milocakery/" target="_blank"><img src="/Assets/img/igIcono Chico.jpeg" alt="igIcono"/></a>
+        </aside>
+
+        <footer class="footer" id="pie">
+            <h5>Copiright ® 2021 MiloCakery. All Rights Reserved.</h5>
+        </footer>
+    </div> 
+</body>
+</html>
