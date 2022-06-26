@@ -35,9 +35,10 @@
     font-weight: bold;
     font-family: 'Lato', sans-serif;
     justify-content: center;
-    position: fixed;
+    position: sticky;
+    top: 0;
     width: 100%;
-    height: 10%;   
+      
 }
 .logo img {
         width: 120px;
@@ -252,12 +253,12 @@ nav {
 /* CSS ABOUT US*/
     .contenido {
     display: flex;
-    margin: 40px;
+    
     align-items: center;
     }
     .parrafo {
-    width: 500px;
-    padding-left: 40px;
+    
+    
     font-size: 20px;
     font-family: 'Lato', sans-serif;
     }
@@ -277,7 +278,6 @@ nav {
         flex-direction: column;
         font-size: 12px;
         width: 100%;
-        height: 15%;
     }
     .logo img {
         width: 70px;
@@ -295,7 +295,7 @@ nav {
     
     .titulo {
         height: 180px;
-        width: 410px;
+        
         display: flex;
         margin-top: 40px;
     }
@@ -303,9 +303,7 @@ nav {
         padding-top: 60px;
         font-size: 28px;
     }
-    .main {
-        width: 410px;
-    }
+   
     .aside {
         width:30px;
     }
@@ -338,7 +336,6 @@ nav {
     }
     .video {
         width: 80%;
-        margin-left: 35px;
     }
 /*FIN MEDIA QUERY PARA 440PX INDEX*/
 /* MEDIA QUERY PARA 440PX HOW TO ORDER*/
@@ -415,19 +412,18 @@ nav {
 /* MEDIA QUERY PARA 440PX ABOUT US*/
     .contenido {
         display: flex;
-        margin: 20px;
         flex-direction: column;
     }
     .contenido img {
-        width: 345px;
+        max-width: 100%;
         margin-top: 10px;
         margin-bottom: 10px;
     }
     .parrafo {
         text-align: justify;
-        width: 380px;
+        
         font-size: 15px;
-        margin-right: 35px;
+       
 
     }
 }
