@@ -1,84 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="../Assets/img/logo.png" type="image/x-icon">
-    <title>Milo</title>
-    <link rel="stylesheet" href="../assets/css/styles.css">
-    
-</head>
-
-<body>
-    <div class="container">
-        <header class="header">
-            
-            <div class="logo">
-                 <img  src="../Assets/img/logo.png" class="logo" alt="logo">
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="shortcut icon" href="../Assets/img/logo.png" type="image/x-icon">
+      <title>Milo</title>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+      <link rel="stylesheet" href="../assets/css/styles.css">
+  </head>
+  <body class="container-fluid">
+    <header>
+      <div class="navbar row">  
+        <nav class="navbar navbar-expand-lg bg-light">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+              <img src="../assets/img/logo.png" alt="" width="130" height="130" class="d-inline-block align-text-top">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./howtoorder.html">How to Order</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./gallery.html">Gallery</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./contactus.html">Contact Us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./aboutus.html">About Us</a>
+                </li>
+              </ul>
             </div>
-            <nav>
-                <div class="navbar">    
-                <ul> 
-                    <li><a href="../index.html">Index</a></li>
-                    <li><a href="./contactus.html">Contact Us</a></li>
-                    <li><a href="./aboutus.html">About Us</a></li>
-                    <li><a href="./gallery.html">Gallery</a></li>
-                    <li><a href="./howtoorder.html">How To Order</a></li>
-                    <li><a href="#pie">Pie de pagina</a></li>
-                </ul>
-                </div>
-                <div class="responsivenav">
-                    <ul class="nav1"> 
-                        <li><a href="../index.html">Index</a></li>
-                        <li><a href="./contactus.html">Contact Us</a></li>
-                        <li><a href="./aboutus.html">About Us</a></li>
-                    </ul>
-                    <ul class="nav2">
-                        <li><a href="./gallery.html">Gallery</a></li>
-                        <li><a href="./howtoorder.html">How To Order</a></li>
-                        <li><a href="#pie">Pie</a></li>
-                    </ul>  
-                </div>     
-            </nav>
-        </header>
-        <main class="main">
-            <div class="titulo">
-                <h1>Contact Us</h1>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item align-items-center justify-content-around">
+                  <a class="face" href="https://www.facebook.com/milocakery/" target="_blank"><img src="/assets/img/Fbicon Chico.jpeg" alt="fb" width="50" height="50"></a>
+                </li>
+                <li class="nav-item">
+                  <a href="https://www.instagram.com/milocakery/" target="_blank"><img src="/assets/img/igIcono Chico.jpeg" alt="ig" width="50" height="50"></a>
+                </li>
+              </ul>
             </div>
-            <div class="form"> 
-                <form action="contactos.php" method="get" enctype="multipart/form-data">
-                    <fieldset class="fieldset">
-                            <input class="dato" type="text" name="Nombre" id="Nombre" placeholder="Ingrese su nombre" required>
-                            <input class="dato" type="text" name="Number" id="Number" placeholder="Ingrese su numero">
-                            <input class="dato" type="email" name="Email" id="Email" placeholder="Ingrese su Email">
-                            <textarea class="detalles" name="Detalles de la torta" id="Detalles" cols="30" rows="10">Detalles de la torta</textarea>
-                        <div class="acepto">
-                            <label for="Acepto">Acepto terminos y condiciones</label> 
-                            <input type="checkbox" name="Acepto" value="Send" required>
-                        </div>
-                        
-                        <div class="btn">
-                            <input type="Submit" value="Send">
-                            <input type="reset" value="Reset">
-                        </div>
-                
-                
-                    </fieldset>
-            </form>
+          </div> 
+        </nav>
+      </div> 
+    </header>
+    <main >
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
         </div>
-
-        </main>
-
-        <aside class="aside">
-                <a class="face" href="https://www.facebook.com/milocakery/" target="_blank"><img src="/Assets/img/Fbicon Chico.jpeg" alt="Fb"/></a>
-                <a href="https://www.instagram.com/milocakery/" target="_blank"><img src="/Assets/img/igIcono Chico.jpeg" alt="igIcono"/></a>
-        </aside>
-
-        <footer class="footer" id="pie">
-            <h5>Copiright ® 2021 MiloCakery. All Rights Reserved.</h5>
-        </footer>
-    </div> 
-</body>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="/assets/img/Lemonpie(1).jpg" class="d-block w-100" alt="portada">
+            <div class="carousel-caption d-none d-md-block">
+              <h2>Contact Us</h2>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="/assets/img/tortapinte2.jpg" class="d-block w-100" alt="portada">
+            <div class="carousel-caption d-none d-md-block">
+              <h2>Milo Cakery Denmark</h2>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <form class="row">
+        <div class="form-group col-12 col-md-7 col-xl-7">
+          <label for="exampleFormControlInput1"></label>
+          <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="Name">
+        </div>
+        <div class="form-group col-12 col-md-7 col-xl-7">
+          <label for="exampleFormControlInput1"></label>
+          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Email address">
+        </div>
+        <div class="form-group col-12 col-md-8 col-xl-8">
+          <label for="exampleFormControlTextarea1"></label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3">Comments</textarea>
+        </div>
+        <div class="acepto">
+          <label for="Acepto">Acepto terminos y condiciones</label> 
+          <input type="checkbox" name="Acepto" value="Send" required>
+        </div>
+        <div class="btn">
+            <input type="Submit" value="Send">
+            <input class="btn2" type="reset" value="Reset">
+        </div>
+      </form>
+        
+        
+    </main>
+    <footer class="row footer">
+      <h5 class="col-12">Copiright ® 2021 MiloCakery. All Rights Reserved</h5>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  </body>
 </html>
